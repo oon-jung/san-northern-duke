@@ -1,0 +1,19 @@
+{
+  "vertices": 135701,
+  "stride": 8,
+  "bounds": {
+    "min": [
+      -2.062213607874103,
+      -2.052462188593684,
+      -1.1300811495101992
+    ],
+    "max": [
+      1.91023714246268,
+      1.8484402899267616,
+      0.3288998428261192
+    ]
+  },
+  "source": "Dolce&Gabbana SAN 2025 official portrait",
+  "method": "MediaPipe relative face depth + interpolated relief; inferred hair/neck/shoulders",
+  "limitation": "Photo-derived frontal relief, not a full 360-degree likeness scan."
+}

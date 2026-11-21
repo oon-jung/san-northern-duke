@@ -1,40 +1,19 @@
 <!doctype html>
-<html lang="ko">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#101c29"><meta name="description" content="SAN — The Northern Duke. 겨울의 끝에 남는 이름. 에이티즈 산에서 영감을 얻은 비공식 팬 에디토리얼 엔딩 페이지.">
-<title>SAN — The Northern Duke</title>
-<link rel="stylesheet" href="style.css"><script defer src="app.js"></script>
-</head>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#193b49"><title>SAN / ATEEZ — Pirate King</title><meta name="description" content="에이티즈 산. 해적왕에서 시작된 항해를 주제로 만든 입체 점군 팬 아트."><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23193b49' d='M0 0h64v64H0z'/%3E%3Cpath fill='%23e9e3cf' d='m32 8 6 18 18 6-18 6-6 18-6-18-18-6 18-6z'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"><script type="module" src="app.js"></script></head>
 <body>
-<div class="experience" id="ending">
-<header class="header">
-<a class="wordmark" href="#ending" aria-label="SAN 엔딩 처음으로">S<span class="wordmark-star">✦</span>N</a>
-<div class="edition">THE NORTHERN DUKE<span>AN UNOFFICIAL FAN EDITORIAL</span></div>
-<button class="notes-trigger" aria-haspopup="dialog" aria-controls="notes">CONCEPT NOTES <span class="plus">+</span></button>
-</header>
-<main class="scene" aria-labelledby="headline">
-<div class="vertical-label">WINTER ENDS. HIS REIGN REMAINS.</div>
-<div class="ghost-name" aria-hidden="true">SAN</div>
-<div class="portrait"><canvas id="portrait" aria-label="검은 정장 차림의 에이티즈 산. 서리빛 하프톤으로 표현한 공식 화보 사진." role="img"></canvas><img id="source-photo" src="assets/san.jpg" alt="" hidden><div class="portrait-shade"></div></div>
-<div class="cross cross-one" aria-hidden="true">+</div><div class="cross cross-two" aria-hidden="true">+</div>
-<div class="chapter"><span class="fine-line"></span> THE FINAL CHAPTER</div>
-<h1 id="headline">The North<br>is <em>yours.</em></h1>
-<div class="closing"><p class="korean">겨울의 끝에,<br>남는 이름.</p><p class="closing-caption">A quiet force.<br>An unforgettable presence.</p></div>
-<div class="identity"><span class="identity-star" aria-hidden="true">✦</span><div><strong>CHOI SAN</strong><span>ATEEZ · 산</span></div></div>
-<div class="seal" aria-hidden="true"><span>N</span><svg viewBox="0 0 80 80"><path d="M40 8 45 33 70 40 45 47 40 72 35 47 10 40 35 33Z"/><circle cx="40" cy="40" r="28"/></svg><span>S</span></div>
-<div class="bottom-copy"><span>THE STORY CLOSES.</span><span>THE PRESENCE STAYS.</span></div>
-<button class="replay" aria-label="눈 입자와 인물 등장 애니메이션 다시 보기"><span class="replay-icon" aria-hidden="true">↻</span> EXPERIENCE AGAIN</button>
-<canvas id="snow" aria-hidden="true"></canvas>
+<div class="page">
+<header><a class="brand" href="#portrait" aria-label="산 팬 아트 처음으로">SAN<span>/ ATEEZ</span></a><nav aria-label="페이지 메뉴"><button id="motion" type="button" aria-pressed="true">움직임 켜짐</button><button id="credits" type="button" aria-haspopup="dialog">작업 기록</button><a href="https://www.youtube.com/watch?v=RqJ1rH9M5G0" target="_blank" rel="noopener noreferrer">해적왕 MV</a></nav><span class="fan-label">UNOFFICIAL FAN ART</span></header>
+<main id="portrait" aria-label="마우스 움직임에 반응하는 산의 입체 점군 얼굴">
+<div class="render-stage"><img class="fallback" src="assets/san.jpg" alt="에이티즈 산의 공식 화보 사진"><canvas id="webgl" role="img" aria-label="에이티즈 산의 얼굴과 상체를 표현한 입체 점군. 마우스 또는 터치 위치를 따라 제한된 각도로 회전합니다."></canvas></div>
+<div class="heading"><p>CHOI SAN · 최산</p><h1>SAN.</h1></div>
+<div class="bearing"><i></i><div><span>BEARING</span><output id="bearing">000°</output></div></div>
+<div class="origin"><i></i><div>24 OCT 2018<span>PIRATE KING · ATEEZ</span></div></div>
+<div class="title"><p>ATEEZ · 해적왕</p><h2>PIRATE<br>KING.</h2></div>
+<div class="caption"><p>TREASURE EP.1 :<br>ALL TO ZERO</p><button id="reset" type="button">정면으로 되돌리기 <span aria-hidden="true">↺</span></button></div>
+<div class="compass" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="37"/><path d="M50 0v100M0 50h100M15 15l70 70M15 85l70-70"/><path class="needle" d="m50 16 7 34-7 34-7-34z"/></svg><span>N</span></div>
+<p class="hint" id="hint">마우스를 움직여 시점을 바꿔보세요</p>
 </main>
-<footer><span>산 · THE NORTHERN DUKE</span><span class="footer-center">A STUDY IN STILLNESS & POWER</span><button class="credit-trigger" aria-controls="notes" aria-haspopup="dialog">IMAGE & DESIGN CREDITS</button></footer>
+<footer><span>SAN / ATEEZ</span><span>입체 점군 팬 아트 · 사진 기반 깊이 추정</span><button id="source" type="button">REFERENCE & CREDITS</button></footer>
 </div>
-<dialog id="notes" aria-labelledby="notes-title">
-<div class="dialog-top"><span class="eyebrow">BEHIND THE ENDING</span><button class="close" aria-label="콘셉트 노트 닫기">×</button></div>
-<h2 id="notes-title">Cold in colour.<br><em>Commanding in presence.</em></h2>
-<p>북부대공의 차가운 분위기를 먹빛 남색과 빙하색으로, 산의 강렬한 존재감을 큰 인물과 여백으로 표현했습니다. 보내주신 레퍼런스의 하프톤 질감과 비대칭 타이포그래피를 엔딩 장면으로 재해석한 비공식 팬 디자인입니다.</p>
-<div class="swatches"><div><i style="--swatch:#101c29"></i>POLAR NIGHT<code>#101C29</code></div><div><i style="--swatch:#c6d5dc"></i>GLACIER<code>#C6D5DC</code></div><div><i style="--swatch:#f0eee8"></i>FROST<code>#F0EEE8</code></div><div><i style="--swatch:#9aabbd"></i>STEEL<code>#9AABBD</code></div></div>
-<p class="sources">사진: <a href="https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-san" target="_blank" rel="noopener noreferrer">Dolce&Gabbana 공식 SAN 앰버서더 소개 (2025.10)</a>. 원본 사진 권리는 원저작자에게 있습니다. 산·ATEEZ·KQ·브랜드의 공식 웹사이트 또는 캠페인이 아닙니다. ‘북부대공’은 이 팬 디자인의 콘셉트이며 실제 활동명·작품명이 아닙니다.</p>
-<p class="sources">TYPE: Cormorant Garamond · DM Sans · IBM Plex Mono (Google Fonts).<br>REFERENCE: 사용자가 제공한 Viktor Oddy / Logios 캡처.</p>
-</dialog>
+<dialog id="notes" aria-labelledby="notes-title"><div class="dialog-head"><h2 id="notes-title">작업 기록</h2><button id="close" aria-label="작업 기록 닫기">닫기 ×</button></div><p>에이티즈의 해적 콘셉트와 ‘해적왕(Pirate King)’을 바탕으로 만든 산의 비공식 팬 아트입니다. 함장 등 공식 세계관의 역할을 산에게 임의로 부여하지 않았습니다.</p><h3>시각 레퍼런스</h3><p><a href="https://motionsites.ai/?prompt=ai-philosophy" target="_blank" rel="noopener noreferrer">Viktor Oddy / MotionSites — AI Philosophy (Logios)</a><br><a href="https://x.com/viktoroddy/status/2123932620212072581" target="_blank" rel="noopener noreferrer">제작자 게시물</a> · <a href="https://pub-86dc5b5484314368ac5436a674b0d919.r2.dev/aaaf/logios-hero.mp4" target="_blank" rel="noopener noreferrer">공개 미리보기 영상</a></p><p>원작의 단색 배경, 큰 점군 인물, 비대칭 산세리프 배치를 참고했습니다. 원작의 소스 코드와 유료 프롬프트는 사용하지 않았습니다.</p><h3>세계관·사진</h3><p><a href="https://ateez-official.jp/movies/29586" target="_blank" rel="noopener noreferrer">ATEEZ 공식 — 해적왕 MV</a><br><a href="https://world.dolcegabbana.com/news/dolce-gabbana-new-global-ambassador-san" target="_blank" rel="noopener noreferrer">SAN 사진 — Dolce&Gabbana 공식 화보 (2025.10)</a></p><h3>입체 표현의 범위</h3><p>사진에서 추정한 얼굴 랜드마크의 상대 깊이를 보간해 실제 XYZ 점군으로 만들었습니다. 머리카락·목·어깨는 보완한 표면입니다. 360도 스캔이나 정확한 두상 복원은 아니며 보이지 않는 뒷면을 과장하지 않도록 회전을 제한했습니다. WebGL을 지원하지 않는 환경에는 사진이 표시됩니다.</p><p>© 사진 및 원작 권리는 각 원저작자에게 있습니다. SAN·ATEEZ·KQ 또는 브랜드의 공식 사이트가 아닙니다.</p></dialog>
 </body></html>
